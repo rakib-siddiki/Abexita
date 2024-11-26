@@ -33,7 +33,12 @@ const TheHeader: FC<IProps> = ({
             className={`flex w-full justify-between items-center py-6 ${className}`}
           >
             <div className=" h-7 xl:h-9">
-              <img src="/Logo.png" alt="Logo" className="size-full" />
+              <img
+                src="/Logo.png"
+                alt="Logo"
+                className="size-full"
+                loading="lazy"
+              />
             </div>
             <nav className="max-lg:hidden">
               <ul className="flex items-center gap-6 text-gray-500 ">
