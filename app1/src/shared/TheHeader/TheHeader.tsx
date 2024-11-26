@@ -27,7 +27,7 @@ const TheHeader: FC<IProps> = ({
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   return (
     <>
-      <header className={`shadow ${headerClasses} w-full`}>
+      <header className={`shadow ${headerClasses} w-full relative`}>
         <section className="container">
           <div
             className={`flex w-full justify-between items-center py-6 ${className}`}
@@ -55,7 +55,7 @@ const TheHeader: FC<IProps> = ({
             <HamburgerIcon
               className="lg:hidden"
               isOpen={mobileSidebarOpen}
-              onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
+              onClick={() => setMobileSidebarOpen((prev) => !prev)}
             />
           </div>
         </section>

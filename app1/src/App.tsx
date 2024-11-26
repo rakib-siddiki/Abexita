@@ -3,12 +3,12 @@ import { TheHeader, HeaderActionButtons } from "./shared";
 
 const App = () => {
   return (
-    <div>
+    <main>
       <TheHeader
         navList={APP_ONE_NAV_LIST}
         ActionButtons={HeaderActionButtons}
       />
-    </div>
+    </main>
   );
 };
 
