@@ -22,7 +22,7 @@ const variantClasses = {
     "bg-transparent hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-100 focus:outline-none",
 };
 const baseClasses =
-  "rounded-lg px-4 py-2 inline-flex items-center gap-2 leading-6 transition duration-200 ease-in-out";
+  "rounded-lg px-4 py-2 inline-flex items-center max-md:text-sm gap-2 leading-6 transition duration-200 ease-in-out max-md:rounded-sm";
 
 const Button: FC<IProps> = ({
   variant = "primary",

@@ -6,6 +6,15 @@ module.exports = {
       container: {
         center: true,
         padding: "1rem",
+        screens: {
+          xl: "1200px",
+        },
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/BackgroundLine.png')",
+      },
+      screens: {
+        xs: "380px",
       },
       colors: {
         primary: {
@@ -40,6 +49,17 @@ module.exports = {
           700: "#005279",
           800: "#003750",
           900: "#001b28",
+        },
+        orange: {
+          100: "#fee3d0",
+          200: "#fcc7a2",
+          300: "#fbab73",
+          400: "#f98f45",
+          500: "#f87316",
+          600: "#E06F1FFF",
+          700: "#95450d",
+          800: "#632e09",
+          900: "#321704",
         },
       },
       fontFamily: {
