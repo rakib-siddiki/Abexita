@@ -1,15 +1,9 @@
-import { Suspense } from "react";
-
-// Import shared components dynamically
-import  Button  from "app1/Button";
-const App = () => (
-  <div style={{ padding: "20px" }}>
-    <h1>App 2</h1>
-    <Suspense fallback={<div>Loading...</div>}>
-      <Button text="Click Me" onClick={() => alert("Button clicked!")} />
-      {/* <Card title="Shared Card" description="This card is from App1." /> */}
-    </Suspense>
-  </div>
-);
-
-export default App;
+export default function App() {
+  return (
+    <div className="h-screen flex items-center justify-center bg-red-900">
+      <h1 className="text-4xl text-white font-bold">
+        Tailwind CSS is Working!
+      </h1>
+    </div>
+  );
+}
