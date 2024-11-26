@@ -1,9 +1,15 @@
-export default function App() {
+import { APP_ONE_NAV_LIST } from "./constant";
+import { TheHeader, HeaderActionButtons } from "./shared";
+
+const App = () => {
   return (
-    <div className="h-screen flex items-center justify-center bg-blue-500">
-      <h1 className="text-4xl text-white font-bold">
-        Tailwind CSS is Working!
-      </h1>
+    <div>
+      <TheHeader
+        navList={APP_ONE_NAV_LIST}
+        actionButtons={<HeaderActionButtons />}
+      />
     </div>
   );
-}
+};
+
+export default App;
