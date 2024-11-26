@@ -1,8 +1,8 @@
-import { AppOneNavList } from "../shared/TheHeader";
+import { TNavList } from "../shared/TheHeader/TheHeader";
 
-export const APP_ONE_NAV_LIST: AppOneNavList[] = [
+export const APP_ONE_NAV_LIST: TNavList[] = [
   {
-    id: "feature",
+    id: "#feature",
     label: "Features",
   },
   {
@@ -11,20 +11,20 @@ export const APP_ONE_NAV_LIST: AppOneNavList[] = [
     label: "Pricing",
   },
   {
-    id: "solutions",
+    id: "#solutions",
     label: "Solutions",
   },
   {
-    id: "resources",
+    id: "#resources",
     label: "Resources",
   },
   {
-    id: "find-professionals",
+    id: "#find-professionals",
     label: "Find Professionals",
     hasDropDown: false,
   },
   {
-    id: "help",
+    id: "#help",
     label: "Help",
   },
 ];

@@ -6,7 +6,7 @@ const App = () => {
     <div>
       <TheHeader
         navList={APP_ONE_NAV_LIST}
-        actionButtons={<HeaderActionButtons />}
+        ActionButtons={HeaderActionButtons}
       />
     </div>
   );
