@@ -1,5 +1,10 @@
+// imports
 import { TNavList } from "../shared/TheHeader/TheHeader";
 
+// exports
+export * from "./industries";
+
+// constants
 export const APP_ONE_NAV_LIST: TNavList[] = [
   {
     id: "#feature",

@@ -41,7 +41,7 @@ const TheHeader: FC<IProps> = ({
               />
             </div>
             <nav className="max-lg:hidden">
-              <ul className="flex items-center gap-6 text-gray-500 ">
+              <ul className="flex items-center gap-6 text-gray-500 hover:*:text-primary-500">
                 {navList.map(({ id, path, label, hasDropDown = true }) => (
                   <li key={id}>
                     <a href={path ?? id} className="max-md:text-xs">

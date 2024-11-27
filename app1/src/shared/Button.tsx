@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import  { forwardRef, ButtonHTMLAttributes, ReactNode } from "react";
 import { Icons } from "../Icons";
 
 type TButtonVariant = keyof typeof variantClasses;
@@ -21,25 +21,26 @@ const variantClasses = {
   ghost:
     "bg-transparent hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-100 focus:outline-none",
 };
+
 const baseClasses =
   "rounded-lg px-4 py-2 inline-flex items-center max-md:text-sm gap-2 leading-6 transition duration-200 ease-in-out max-md:rounded-sm";
 
-const Button: FC<IProps> = ({
-  variant = "primary",
-  children,
-  className,
-  isShowIcon,
-  icon,
-  ...rest
-}) => {
-  return (
-    <button
-      {...rest}
-      className={`${variantClasses[variant]} ${baseClasses} ${className}`}
-    >
-      {isShowIcon && (icon ?? <Icons.Search />)} {children}
-    </button>
-  );
-};
+const Button = forwardRef<HTMLButtonElement, IProps>(
+  (
+    { variant = "primary", children, className, isShowIcon, icon, ...rest },
+    ref
+  ) => {
+    return (
+      <button
+        {...rest}
+        ref={ref}
+        className={`${variantClasses[variant]} ${baseClasses} ${className}`}
+      >
+        {isShowIcon && (icon ?? <Icons.Search />)} {children}
+      </button>
+    );
+  }
+);
 
+Button.displayName = "Button"; // Optional: Useful for debugging in React DevTools
 export default Button;
