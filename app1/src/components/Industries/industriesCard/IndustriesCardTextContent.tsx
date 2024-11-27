@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { IndustriesCardsProps } from "./IndustriesCards";
+import { Icons } from "../../../Icons";
 
 interface IIndustriesCardTextContentProps
   extends Omit<IndustriesCardsProps, "image"> {
@@ -31,6 +32,13 @@ const IndustriesCardTextContent: FC<IIndustriesCardTextContentProps> = ({
     >
       {description}
     </p>
+    <a
+      className="underline text-gray-100 inline-flex gap-3 items-center max-md:text-sm"
+      href="/"
+    >
+      Learn more
+      <Icons.LinkSquare className="max-md:w-3" />
+    </a>
   </>
 );
 export default IndustriesCardTextContent;

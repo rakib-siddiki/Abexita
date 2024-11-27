@@ -10,7 +10,7 @@ const IndustriesCardContent: FC<IndustriesCardsProps> = ({
   image,
 }) => {
   return (
-    <div className="flex justify-between w-full h-full gap-1 text-white">
+    <div className="flex justify-between w-full h-full gap-3 text-white">
       <div className={`space-y-4 w-3/5 ${active ? "" : "hidden"}`}>
         <IndustriesCardTextContent
           badge={badge}

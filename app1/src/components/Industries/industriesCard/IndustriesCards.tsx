@@ -21,8 +21,8 @@ const IndustriesCards: FC<IndustriesCardsProps> = ({
   const imageUrl = !active ? `url(${image})` : "";
   return (
     <div
-      className={`h-96 px-3 xl:px-5 py-6 bg-primary-500 rounded-2xl transition-all duration-500 ease-out hover:bg-primary-500/90  bg-no-repeat bg-center ${
-        active ? "flex-[4] " : "flex-[0.5] bg-cover"
+      className={`h-96 px-3 xl:px-5 py-6 bg-primary-500 rounded-2xl transition-all duration-[1000ms] ease-out hover:bg-primary-500/90  bg-no-repeat bg-center ${
+        active ? "flex-[5] " : "flex-[0.5] bg-cover"
       }`}
       style={{ backgroundImage: imageUrl }}
     >

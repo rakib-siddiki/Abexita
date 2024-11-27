@@ -71,13 +71,13 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
 export const CAROUSEL_INDUSTRIES_CARD_LIST = INDUSTRIES_CARD_LIST.map(
   (card) => {
     const carouselImages: { [key: number]: string } = {
-      0: "/public/industries/bgRemoved/doctor-removebg-preview.png",
-      1: "/public/industries/bgRemoved/lawyer-removebg-preview.png",
-      2: "/public/industries/bgRemoved/salone-removebg-preview.png",
-      3: "/public/industries/bgRemoved/therapist-removebg-preview.png",
-      4: "/public/industries/bgRemoved/fitness-removebg-preview.png",
-      5: "/public/industries/bgRemoved/instructor-removebg-preview.png",
-      6: "/public/industries/bgRemoved/consultant-removebg-preview.png",
+      0: "/industries/bgRemoved/doctor-removebg-preview.png",
+      1: "/industries/bgRemoved/lawyer-removebg-preview.png",
+      2: "/industries/bgRemoved/salone-removebg-preview.png",
+      3: "/industries/bgRemoved/therapist-removebg-preview.png",
+      4: "/industries/bgRemoved/fitness-removebg-preview.png",
+      5: "/industries/bgRemoved/instructor-removebg-preview.png",
+      6: "/industries/bgRemoved/consultant-removebg-preview.png",
     };
 
     return {
