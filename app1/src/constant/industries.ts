@@ -1,4 +1,4 @@
-import { IIndustriesCard } from "../components/Industries/IndustriesCards";
+import { IIndustriesCard } from "../components/Industries/industriesCard/IndustriesCards";
 
 export const INDUSTRIES_TAB_LIST = [
   { name: "Doctor ", id: 0 },
@@ -20,7 +20,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/doctor.png",
   },
   {
-    id: 2,
+    id: 1,
     badge: "Lawyer",
     title: "Business solutions for Law Firms",
     description:
@@ -28,7 +28,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/lawyer.png",
   },
   {
-    id: 3,
+    id: 2,
     badge: "Spa & Salon",
     title: "Effortless Scheduling for Spas & Salons",
     description:
@@ -36,7 +36,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/salone.png",
   },
   {
-    id: 4,
+    id: 3,
     badge: "Therapist",
     title: "Simplify Your Therapy Practice with Intuitive Scheduling",
     description:
@@ -44,7 +44,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/therapist.png",
   },
   {
-    id: 5,
+    id: 4,
     badge: "Fitness",
     title: "Seamless Bookings for Trainers ",
     description:
@@ -52,7 +52,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/fitness.png",
   },
   {
-    id: 6,
+    id: 5,
     badge: "Instructor",
     title: "Effortless Class Scheduling for Instructors",
     description:
@@ -60,7 +60,7 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/instructor.png",
   },
   {
-    id: 7,
+    id: 6,
     badge: "Consultancy",
     title: "Give advice anytime from anywhere",
     description:
@@ -68,3 +68,21 @@ export const INDUSTRIES_CARD_LIST: IIndustriesCard[] = [
     image: "/industries/consultant.png",
   },
 ];
+export const CAROUSEL_INDUSTRIES_CARD_LIST = INDUSTRIES_CARD_LIST.map(
+  (card) => {
+    const carouselImages: { [key: number]: string } = {
+      0: "/public/industries/bgRemoved/doctor-removebg-preview.png",
+      1: "/public/industries/bgRemoved/lawyer-removebg-preview.png",
+      2: "/public/industries/bgRemoved/salone-removebg-preview.png",
+      3: "/public/industries/bgRemoved/therapist-removebg-preview.png",
+      4: "/public/industries/bgRemoved/fitness-removebg-preview.png",
+      5: "/public/industries/bgRemoved/instructor-removebg-preview.png",
+      6: "/public/industries/bgRemoved/consultant-removebg-preview.png",
+    };
+
+    return {
+      ...card,
+      image: carouselImages[card.id] || card.image, // Override if custom image exists
+    };
+  }
+);
