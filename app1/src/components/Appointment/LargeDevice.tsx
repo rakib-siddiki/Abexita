@@ -11,7 +11,7 @@ const LargeDevice = () => {
       <div className="relative">
         <div
           className="w-full  px-3 lg:px-24 py-5 lg:py-12 border rounded-[36px] mb-3 md:mb-10"
-          style={{ position: "sticky", top: "5vh", zIndex: 0 }}
+          style={{ position: "sticky", top: "15vh", zIndex: 0 }}
         >
           <h1 className="text-lg  xs:text-2xl md:text-4xl font-semibold text-center text-slate-700 mb-4 md:mb-8 lg:mb-12 lg:!leading-[50px] text-pretty">
             Find and Book Appointments with Local and International

@@ -24,7 +24,7 @@ const StackCard: FC<IProps> = ({
   return (
     <div
       className={`flex justify-between items-center md:gap-8  py-8 px-6 rounded-3xl  h-[480px] mb-4 ${cardClasses} ${className}`}
-      style={{ position: position, top: "5vh", zIndex: 8 }}
+      style={{ position: position, top: "15vh", zIndex: 8 }}
     >
       <AppointmentCardTexts description={description} title={title} linkColor={linkColor} className="!*:text-xs" />
       <div className="md:max-w-screen-sm h-full flex justify-end rounded-2xl overflow-hidden">

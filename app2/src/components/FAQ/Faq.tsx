@@ -25,6 +25,7 @@ const Faq = () => {
             <img
               src="/faq.png"
               alt="faq-image"
+              loading="lazy"
               className="object-cover aspect-square size-full"
             />
           </div>
