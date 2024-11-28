@@ -9,7 +9,11 @@ export default defineConfig({
       name: "app1",
       filename: "remoteEntry.js", // Expose the remoteEntry at this path
       exposes: {
-        "./Button": "./src/shared/Button.tsx", // Expose components
+        "./Button": "./src/shared/Button.tsx",
+        "./Card": "./src/shared/Card.tsx",
+        "./Icons": "./src/Icons/index.tsx",
+        "./FeaturesSection": "./src/shared/FeaturesSection/FeaturesSection.tsx",
+        "./TheHeader": "./src/shared/TheHeader/TheHeader.tsx",
       },
       shared: ["react", "react-dom"],
     }),

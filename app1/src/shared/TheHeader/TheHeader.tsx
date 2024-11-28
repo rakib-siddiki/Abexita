@@ -9,15 +9,18 @@ export type TNavList = {
   label: string;
   hasDropDown?: boolean;
 };
+
 export type TActionButtons = ComponentType<{
   className?: string;
 }>;
+
 interface IProps {
   navList: TNavList[];
   ActionButtons: TActionButtons;
   className?: string;
   headerClasses?: string;
 }
+
 const TheHeader: FC<IProps> = ({
   navList,
   ActionButtons,
@@ -27,18 +30,22 @@ const TheHeader: FC<IProps> = ({
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   return (
     <>
-      <header className={`shadow ${headerClasses} w-full relative`}>
+      <header
+        className={`shadow ${headerClasses} w-full sticky top-0 z-50 bg-gray-50`}
+      >
         <section className="container">
           <div
-            className={`flex w-full justify-between items-center py-6 ${className}`}
+            className={`flex w-full justify-between items-center py-6  ${className}`}
           >
             <div className=" h-7 xl:h-9">
-              <img
-                src="/Logo.png"
-                alt="Logo"
-                className="size-full"
-                loading="lazy"
-              />
+              <a href="http://localhost:5001/">
+                <img
+                  src="/Logo.png"
+                  alt="Logo"
+                  className="size-full"
+                  loading="lazy"
+                />
+              </a>
             </div>
             <nav className="max-lg:hidden">
               <ul className="flex items-center gap-6 text-gray-500 hover:*:text-primary-500">

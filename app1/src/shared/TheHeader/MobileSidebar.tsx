@@ -17,7 +17,7 @@ const MobileSidebar: FC<IProps> = ({
         mobileSidebarOpen
           ? "translate-x-0 opacity-100 z-20"
           : "-translate-x-full opacity-0 z-[-1]"
-      } lg:hidden bg-gray-50  shadow p-4 text-center absolute top-[65px] right-0 w-full rounded-md transition-all duration-300`}
+      } lg:hidden bg-gray-50  shadow p-4 text-center fixed z-50 top-[65px] right-0 w-full rounded-md transition-all duration-300`}
     >
       <ul className="text-gray-600 space-y-5 text-left">
         {navList.map(({ id, path, label }) => (

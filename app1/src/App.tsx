@@ -8,6 +8,7 @@ const App = () => {
       <TheHeader
         navList={APP_ONE_NAV_LIST}
         ActionButtons={HeaderActionButtons}
+        
       />
       {/* hero section  */}
       <Hero />
