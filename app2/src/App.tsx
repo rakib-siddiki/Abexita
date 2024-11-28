@@ -1,5 +1,5 @@
 import TheHeader from "app1/TheHeader";
-import HeaderActionButtons from "./component/HeaderActionButtons";
+import { HeaderActionButtons, Hero, Pricing, Trial } from "./components";
 import { APP_TWO_NAV_LIST } from "./constant";
 const App = () => {
   return (
@@ -7,8 +7,11 @@ const App = () => {
       <TheHeader
         navList={APP_TWO_NAV_LIST}
         ActionButtons={HeaderActionButtons}
-        className="xl:!justify-start  xl:gap-12 !w-full"
+        className="xl:!justify-start xl:gap-12 !w-full"
       />
+      <Hero />
+      <Pricing />
+      <Trial/>
     </main>
   );
 };
