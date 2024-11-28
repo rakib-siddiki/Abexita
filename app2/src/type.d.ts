@@ -18,6 +18,12 @@ declare module "app1/TheHeader" {
   }>;
   export default TheHeader;
 }
+declare module "app1/FeaturesSection" {
+  import React from "react";
+
+  const FeaturesSection: React.FC;
+  export default FeaturesSection;
+}
 
 declare module "app1/types" {
   export type TButtonVariant =
