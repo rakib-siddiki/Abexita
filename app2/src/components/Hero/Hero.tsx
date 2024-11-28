@@ -6,7 +6,7 @@ const Hero = () => {
   console.log("🚀 > Hero > plan:", plan);
 
   return (
-    <div className="w-full bg-[#F5FFF6]">
+    <section className="w-full bg-[#F5FFF6] mb-16 lg:mb-20">
       <div className="w-full text-center px-4 pt-14 pb-20 bg-[#F5FFF6] flex flex-col gap-3 lg:gap-6 justify-center items-center">
         <HeroSummery />
         <div className="bg-[#ECECEC] p-1 flex rounded-lg mx-auto">
@@ -24,7 +24,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
