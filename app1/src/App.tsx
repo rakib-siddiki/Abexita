@@ -1,4 +1,4 @@
-import { Brands, Hero, Thumbnail, Industries } from "./components";
+import { Brands, Hero, Thumbnail, Industries, Appointment } from "./components";
 import { APP_ONE_NAV_LIST } from "./constant";
 import { TheHeader, HeaderActionButtons, FeaturesSection } from "./shared";
 const App = () => {
@@ -19,6 +19,8 @@ const App = () => {
       <Industries />
       {/* Features Section  */}
       <FeaturesSection />
+      {/* appointment section */}
+      <Appointment />
     </main>
   );
 };
