@@ -35,7 +35,7 @@ const TheHeader: FC<IProps> = ({
       >
         <section className="container">
           <div
-            className={`flex w-full justify-between items-center py-4  ${className}`}
+            className={`flex w-full justify-between items-center py-4 ${className}`}
           >
             <div className=" h-7 xl:h-9">
               <a href="http://localhost:5001/">
