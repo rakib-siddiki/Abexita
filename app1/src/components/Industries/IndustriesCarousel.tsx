@@ -31,7 +31,7 @@ const IndustriesCarousel = () => {
                   src={image}
                   alt={badge}
                   loading="lazy"
-                  className="rounded-xl size-full object-center   object-contain bg-blend-darken mix-blend-multiply bg-gray-50"
+                  className="rounded-xl size-full object-center  object-contain bg-blend-darken mix-blend-multiply bg-gray-50"
                 />
               </div>
             </div>

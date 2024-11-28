@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Icons } from "../../Icons";
+import { AppointmentCardTexts } from ".";
 
 export interface IStackCard {
   position: "relative" | "sticky";
@@ -26,21 +26,7 @@ const StackCard: FC<IProps> = ({
       className={`flex justify-between items-center md:gap-8  py-8 px-6 rounded-3xl  h-[480px] mb-4 ${cardClasses} ${className}`}
       style={{ position: position, top: "5vh", zIndex: 8 }}
     >
-      <div className="space-y-8 md:max-w-screen-sm ">
-        <h3 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-9">
-          {title}
-        </h3>
-        <p className="max-lg:text-sm">{description}</p>
-        <div>
-          <a
-            className={`underline text-sm font-semibold text-gray-100 inline-flex gap-3 items-center max-md:text-sm ${linkColor}`}
-            href="/"
-          >
-            Learn more
-            <Icons.LinkSquare className="max-md:w-3" />
-          </a>
-        </div>
-      </div>
+      <AppointmentCardTexts description={description} title={title} linkColor={linkColor} className="!*:text-xs" />
       <div className="md:max-w-screen-sm h-full flex justify-end rounded-2xl overflow-hidden">
         <img
           src={image}
