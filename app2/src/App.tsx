@@ -1,5 +1,5 @@
 import TheHeader from "app1/TheHeader";
-import { HeaderActionButtons, Hero, Trial } from "./components";
+import { Faq, HeaderActionButtons, Hero, Trial } from "./components";
 import { APP_TWO_NAV_LIST } from "./constant";
 import FeaturesSection from "app1/FeaturesSection";
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
       <Hero />
       <Trial />
       <FeaturesSection />
+      <Faq />
     </main>
   );
 };

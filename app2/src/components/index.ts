@@ -1,4 +1,5 @@
 export { default as HeaderActionButtons } from "./HeaderActionButtons";
-export {default as Trial} from './Trial'
+export { default as Trial } from "./Trial";
 export * from "./Hero";
 export * from "./Pricing";
+export * from "./FAQ";

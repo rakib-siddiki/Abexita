@@ -17,9 +17,9 @@ const variantClasses = {
   secondary:
     "bg-blue-500 text-white hover:bg-blue-600 focus:bg-blue-600 active:bg-blue-700 focus:outline-none",
   outline:
-    "bg-gray-50 border border-gray-600 text-gray-700 hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-100 focus:outline-none",
+    "bg-gray-50 border border-gray-600 text-gray-700 hover:bg-gray-100/30 active:bg-gray-200 focus:bg-gray-100/30 focus:outline-none",
   ghost:
-    "bg-transparent hover:bg-gray-100 active:bg-gray-200 focus:bg-gray-100 focus:outline-none",
+    "bg-transparent hover:bg-gray-100/30 active:bg-gray-200 focus:bg-gray-100/30 focus:outline-none",
 };
 
 const baseClasses =
