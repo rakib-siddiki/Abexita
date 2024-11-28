@@ -1,11 +1,13 @@
 const IndustriesMain = () => {
   return (
     <>
-      <h3 className="mb-2 max-lg:text-xl lg:mb-4 font-medium text-center text-orange-600">Industries</h3>
+      <h3 className="mb-2 max-lg:text-xl lg:mb-4 font-medium text-center text-orange-600">
+        Industries
+      </h3>
       {/* industries title */}
       <h2
         aria-label="Industries title"
-        className="text-xl lg:text-[32px] lg:max-w-2xl font-semibold lg:text-center mx-auto mb-3"
+        className="text-3xl lg:text-[32px] leading-10 lg:leading-[50px] lg:max-w-2xl font-semibold lg:text-center mx-auto mb-3"
       >
         Popular Businesses and Practitioners who use Ambel
       </h2>
